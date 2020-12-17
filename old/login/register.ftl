@@ -1,11 +1,9 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout; section>
     <#if section = "title">
-        PrintTrail | Register
+        ${msg("Print Trail - Register",(realm.displayName!''))?no_esc}
     <#elseif section = "header">
-        Print<strong>Trail</strong>
-        <br><br>
-        <small>Register</small>
+        ${msg("Print Trail",(realm.displayNameHtml!''))?no_esc}
     <#elseif section = "form">
         <form id="kc-register-form" class="register form ${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
           <input type="text" readonly value="this is not a login form" style="display: none;">

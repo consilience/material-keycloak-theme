@@ -1,11 +1,9 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayMessage=false; section>
     <#if section = "title">
-        PrintTrail | Error
+        ${msg("errorTitle")?no_esc}
     <#elseif section = "header">
-        Print<strong>Trail</strong>
-        <br><br>
-        <small>Error</small>
+        ${msg("errorTitleHtml")?no_esc}
     <#elseif section = "form">
         <div id="kc-error-message">
             <p class="instruction">${message.summary}</p>

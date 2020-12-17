@@ -1,11 +1,9 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayInfo=true; section>
     <#if section = "title">
-        PrintTrail | Reset Password
+        ${msg("emailForgotTitle")?no_esc}
     <#elseif section = "header">
-        Print<strong>Trail</strong>
-        <br><br>
-        <small>Reset Password</small>
+        ${msg("emailForgotTitle")?no_esc}
     <#elseif section = "form">
         <form id="kc-reset-password-form" class="form reset-password ${properties.kcFormClass!}" action="${url.loginAction}" method="post">
             <div class="reset-password-field ${properties.kcFormGroupClass!}">

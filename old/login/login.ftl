@@ -2,12 +2,10 @@
 <@layout.registrationLayout displayInfo=social.displayInfo; section>
 
     <#if section = "title">
-        PrintTrail | Log in
+        ${msg("loginTitle",(realm.displayName!''))?no_esc}
     <#elseif section = "header">
 	<div class="title">
-        Print<strong>Trail</strong>
-        <br><br>
-        <small>Log in</small>
+            ${msg("loginTitleHtml",(realm.displayNameHtml!''))?no_esc}
     </div>
     <#elseif section = "form">
         <#if realm.password>

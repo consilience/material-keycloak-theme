@@ -1,11 +1,9 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout; section>
     <#if section = "title">
-        PrintTrail | Update Profile
+        ${msg("loginProfileTitle")?no_esc}
     <#elseif section = "header">
-        Print<strong>Trail</strong>
-        <br><br>
-        <small>Update Profile</small>
+        ${msg("loginProfileTitle")?no_esc}
     <#elseif section = "form">
         <form id="kc-update-profile-form" class="form update-profile ${properties.kcFormClass!}" action="${url.loginAction}" method="post">
             <#if user.editUsernameAllowed>

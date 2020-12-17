@@ -1,11 +1,9 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayInfo=true; section>
     <#if section = "title">
-        PrintTrail | TOTP Settings
+        ${msg("loginTotpTitle")?no_esc}
     <#elseif section = "header">
-        Print<strong>Trail</strong>
-        <br><br>
-        <small>TOTP Settings</small>
+        ${msg("loginTotpTitle")?no_esc}
     <#elseif section = "form">
 <ol id="kc-totp-settings">
     <li>

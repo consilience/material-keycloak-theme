@@ -1,11 +1,9 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout; section>
     <#if section = "title">
-        PrintTrail | Log in
+        ${msg("loginTitle",realm.displayName)?no_esc}
     <#elseif section = "header">
-        Print<strong>Trail</strong>
-        <br><br>
-        <small>Enter TOTP Code</small>
+        ${msg("loginTitleHtml",realm.displayNameHtml)?no_esc}
     <#elseif section = "form">
         <form id="kc-totp-login-form" class="form totp ${properties.kcFormClass!}" action="${url.loginAction}" method="post">
             <div class="${properties.kcFormGroupClass!}">
