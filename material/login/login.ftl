@@ -104,13 +104,6 @@
                             </div>
                         </div>
                         <div>
-                            <#if realm.password && realm.registrationAllowed && !usernameEditDisabled??>
-                                <div id="kc-registration" class="col-xs-12" <#if realm.password && realm.registrationAllowed && !usernameEditDisabled?? && realm.resetPasswordAllowed>style="margin-bottom: 15px;"</#if>>
-                                    <span>${msg("noAccount")} <a href="${url.registrationUrl}">${msg("doRegister")}</a></span>
-                                </div>
-                            </#if>
-                        </div>
-                        <div>
                             <div class="${properties.kcFormOptionsWrapperClass!} col-xs-12">
                                 <#if realm.resetPasswordAllowed>
                                     <span><a href="${url.loginResetCredentialsUrl}">${msg("doForgotPassword")}</a></span>
