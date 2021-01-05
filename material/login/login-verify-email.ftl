@@ -4,6 +4,7 @@
 	<div class="title">
         Verify your email
     </div>
+    <#elseif section = "title">
     <#elseif section = "form">
     <div class="alert alert-success">
         We've sent you an email. Check your inbox and click the link to activate your account.
