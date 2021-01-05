@@ -5,7 +5,7 @@
     <#elseif section = "header">
         Print<strong>Trail</strong>
         <br><br>
-        <small>Register</small>
+        <small>Create your user account</small>
     <#elseif section = "form">
         <form id="kc-register-form" class="register form ${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
           <input type="text" readonly value="this is not a login form" style="display: none;">
