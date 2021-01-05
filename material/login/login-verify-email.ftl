@@ -1,10 +1,9 @@
 <#import "template.ftl" as layout>
-<@layout.registrationLayout displayInfo=true; section>
+<@layout.registrationLayout displayInfo=true; displayMessage=false; section>
     <#if section = "header">
 	<div class="title">
         Verify your email
     </div>
-    <#elseif section = "title">
     <#elseif section = "form">
     <div class="alert alert-success">
         We've sent you an email. Check your inbox and click the link to activate your account.
