@@ -1,5 +1,5 @@
 <#import "template.ftl" as layout>
-<@layout.registrationLayout displayInfo=true; displayMessage=false; section>
+<@layout.registrationLayout displayInfo=true displayMessage=false; section>
     <#if section = "header">
 	<div class="title">
         Verify your email
