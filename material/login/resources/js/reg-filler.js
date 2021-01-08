@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (emailField) {
         let emailAddress = getQueryVariable("email_address");
         if (emailAddress){
-            field.value = emailAddress;
+            emailField.value = emailAddress;
         }
     }
 
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (firstNameField) {
         let firstName = getQueryVariable("first_name");
         if (firstName){
-            field.value = firstName;
+            firstNameField.value = firstName;
         }
     }
 
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     if (lastNameField) {
         let lastName = getQueryVariable("last_name");
         if (lastName){
-            field.value = lastName;
+            lastNameField.value = lastName;
         }
     }
 });
