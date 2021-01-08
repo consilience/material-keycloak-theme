@@ -12,7 +12,7 @@ function getQueryVariable(variable)
 document.addEventListener("DOMContentLoaded", function(event) { 
     let field = document.querySelector("input#email");
     if (field) {
-        let emailAddress = getQueryVariable("email-address");
+        let emailAddress = getQueryVariable("email_address");
         if (emailAddress){
             field.value = emailAddress;
         }
