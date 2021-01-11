@@ -5,9 +5,7 @@
         PrintTrail | Log in
     <#elseif section = "header">
 	<div class="title">
-        Print<strong>Trail</strong>
-        <br><br>
-        <small>Log in</small>
+        <img src="${url.resourcesPath}/img/pt-logo.svg" width="250px">
     </div>
     <#elseif section = "form">
         <#if realm.password>

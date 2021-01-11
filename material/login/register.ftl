@@ -3,7 +3,7 @@
     <#if section = "title">
         PrintTrail | Register
     <#elseif section = "header">
-        Print<strong>Trail</strong>
+        <img src="${url.resourcesPath}/img/pt-logo.svg" width="250px">
         <br><br>
         <small>Create your user account</small>
     <#elseif section = "form">

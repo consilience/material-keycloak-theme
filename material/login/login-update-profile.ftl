@@ -3,7 +3,7 @@
     <#if section = "title">
         PrintTrail | Update Profile
     <#elseif section = "header">
-        Print<strong>Trail</strong>
+        <img src="${url.resourcesPath}/img/pt-logo.svg" width="250px">
         <br><br>
         <small>Update Profile</small>
     <#elseif section = "form">

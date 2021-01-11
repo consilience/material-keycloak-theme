@@ -3,7 +3,7 @@
     <#if section = "title">
         PrintTrail | Reset Password
     <#elseif section = "header">
-        Print<strong>Trail</strong>
+        <img src="${url.resourcesPath}/img/pt-logo.svg" width="250px">
         <br><br>
         <small>Reset Password</small>
     <#elseif section = "form">
