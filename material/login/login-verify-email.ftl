@@ -2,7 +2,7 @@
 <@layout.registrationLayout displayInfo=true displayMessage=false; section>
     <#if section = "header">
 	<div class="title">
-        <img src="${url.resourcesPath}/img/pt-logo.svg" width="180px">
+        <img src="${url.resourcesPath}/img/pt-logo.svg" width="180px" style="margin-bottom: 2rem">
         <br><br>
         Verify your email
     </div>

@@ -3,7 +3,7 @@
     <#if section = "title">
         PrintTrail | Log in
     <#elseif section = "header">
-        <img src="${url.resourcesPath}/img/pt-logo.svg" width="180px">
+        <img src="${url.resourcesPath}/img/pt-logo.svg" width="180px" style="margin-bottom: 2rem">
         <br><br>
         <small>Enter TOTP Code</small>
     <#elseif section = "form">

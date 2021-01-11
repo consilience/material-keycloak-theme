@@ -5,7 +5,7 @@
         PrintTrail | Log in
     <#elseif section = "header">
 	<div class="title">
-        <img src="${url.resourcesPath}/img/pt-logo.svg" width="180px">
+        <img src="${url.resourcesPath}/img/pt-logo.svg" width="180px" style="margin-bottom: 2rem">
     </div>
     <#elseif section = "form">
         <#if realm.password>

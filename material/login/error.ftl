@@ -3,7 +3,7 @@
     <#if section = "title">
         PrintTrail | Error
     <#elseif section = "header">
-        <img src="${url.resourcesPath}/img/pt-logo.svg" width="180px">
+        <img src="${url.resourcesPath}/img/pt-logo.svg" width="180px" style="margin-bottom: 2rem">
         <br><br>
         <small>Error</small>
     <#elseif section = "form">
