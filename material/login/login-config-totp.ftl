@@ -3,7 +3,7 @@
     <#if section = "title">
         PrintTrail | TOTP Settings
     <#elseif section = "header">
-        <img src="${url.resourcesPath}/img/pt-logo.svg" width="250px">
+        <img src="${url.resourcesPath}/img/pt-logo.svg" width="180px">
         <br><br>
         <small>TOTP Settings</small>
     <#elseif section = "form">
