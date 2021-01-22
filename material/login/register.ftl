@@ -128,7 +128,7 @@
             </#if>
 
             <div style="display: none; color: #f74f4f;">
-                <span><small id="validation-error-message-text"></small></span>
+                <span><small id="validation-error-message"></small></span>
             </div>
 
             <#if recaptchaRequired??>
