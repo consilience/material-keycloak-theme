@@ -9,13 +9,13 @@
     <#elseif section = "form">
         <span style="color: 6e6e6e;">
           <p class="mb-1">Your password must follow these rules:</p>
-          <ul>
-            <li>Minimum length of 8 characters</li>
-            <li>Contain at least one uppercase letter</li>
-            <li>Contain at least one number</li>
-            <li>Contain at least one special character</li>
-            <li>It must not be your username</li>
-            <li>You have not used this password recently for Print Trail</li>
+          <ul style="color: 6e6e6e;">
+            <li style="color: 6e6e6e;">Minimum length of 8 characters</li>
+            <li style="color: 6e6e6e;">Contain at least one uppercase letter</li>
+            <li style="color: 6e6e6e;">Contain at least one number</li>
+            <li style="color: 6e6e6e;">Contain at least one special character</li>
+            <li style="color: 6e6e6e;">It must not be your username</li>
+            <li style="color: 6e6e6e;">You have not used this password recently for Print Trail</li>
           </ul>
         </span>
         <form id="kc-register-form" class="register form ${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
