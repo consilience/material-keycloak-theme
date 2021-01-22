@@ -127,6 +127,10 @@
             </div>  -->
             </#if>
 
+            <div style="display: none; color: #f74f4f;">
+                <span><small id="validation-error-message-text"></small></span>
+            </div>
+
             <#if recaptchaRequired??>
             <div class="form-group">
                 <div class="${properties.kcInputWrapperClass!}">
@@ -149,7 +153,7 @@
                 </div>
 
                 <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-                    <button class="mdc-button mdc-button--raised ${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" type="submit">
+                    <button disabled id="submit-register-btn" class="mdc-button mdc-button--raised ${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" type="submit">
                         ${msg("doRegister")?no_esc}
                     </button>
                 </div>
