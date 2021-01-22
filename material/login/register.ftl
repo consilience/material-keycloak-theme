@@ -84,7 +84,7 @@
 
             <#if passwordRequired>
 
-            <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ${properties.kcLabelClass!}">
+            <div id="password-input-parent" class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ${properties.kcLabelClass!}">
                 <i class="material-icons mdc-text-field__icon" tabindex="-1" role="button">lock</i>
                 <input required id="password" class="mdc-text-field__input ${properties.kcInputClass!}" name="password" type="password">
                 <div class="${properties.kcLabelWrapperClass!}">
@@ -98,7 +98,7 @@
                 <div class="mdc-notched-outline__idle"></div>
             </div>
 
-            <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ${properties.kcLabelClass!}">
+            <div id="password-confirm-input-parent" class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ${properties.kcLabelClass!}">
                 <i class="material-icons mdc-text-field__icon" tabindex="-1" role="button">lock</i>
                 <input required id="password-confirm" class="mdc-text-field__input ${properties.kcInputClass!}" name="password-confirm" type="password">
                 <div class="${properties.kcLabelWrapperClass!}">
@@ -112,19 +112,6 @@
                 <div class="mdc-notched-outline__idle"></div>
             </div>
 
-            <#--  <div class="register-field ${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('password-confirm',properties.kcFormGroupErrorClass!)}">
-                <div class="${properties.kcLabelWrapperClass!}">
-                    <label for="password-confirm" class="${properties.kcLabelClass!}">${msg("passwordConfirm")} *</label>
-                </div>
-                <div class="${properties.kcInputWrapperClass!}">
-                    <input type="password" id="password-confirm" class="form-control ${properties.kcInputClass!}" name="password-confirm" />
-
-                    <div id="capsLockWarning2" style="font-weight: bold; color: maroon; margin: 0 0 10px 0; display: none;">
-                        <i class="fa fa-exclamation-triangle" style="color: #f0ad4e"></i>
-                        ${msg("capsLockWarning")}
-                    </div>
-                </div>
-            </div>  -->
             </#if>
 
             <div id="validation-error-message" style="display: none; color: #f74f4f;">

@@ -7,12 +7,16 @@ function showValidationIssue(errorMessage) {
     document.getElementById('validation-error-message-text').innerText = errorMessage;
     document.getElementById('validation-error-message').style.display = "block";
     document.getElementById('submit-register-btn').disabled = true;
+    document.getElementById('password-input-parent').classList.add('mdc-text-field--invalid');
+    document.getElementById('password-confirm-input-parent').classList.add('mdc-text-field--invalid');
 }
 
 function hideValidationIssues() {
     document.getElementById('validation-error-message-text').innerText = "";
     document.getElementById('validation-error-message').style.display = "none";
     document.getElementById('submit-register-btn').disabled = false;
+    document.getElementById('password-input-parent').classList.remove('mdc-text-field--invalid');
+    document.getElementById('password-confirm-input-parent').classList.remove('mdc-text-field--invalid');
 }
 
 function validateForm() {
