@@ -31,6 +31,11 @@ function validateForm() {
     let password = document.getElementById('password').value;
     let passwordConfirm = document.getElementById('password-confirm').value;
 
+    if (password === "" && passwordConfirm === "") {
+        showValidationIssue("Password and confirmation are required");
+        return;
+    }
+
     if (password === passwordConfirm) {
         if (validate(password)) {
             hideValidationIssues();
