@@ -7,20 +7,30 @@ function showValidationIssue(errorMessage) {
     document.getElementById('validation-error-message-text').innerText = errorMessage;
     document.getElementById('validation-error-message').style.display = "block";
     document.getElementById('submit-register-btn').disabled = true;
+
+    let passwordEl = document.getElementById('password');
+    let passwordConfirmEl = document.getElementById('password-confirm');
+
+    passwordEl.valid = false;
+    passwordConfirmEl.valid = false;
 }
 
 function hideValidationIssues() {
     document.getElementById('validation-error-message-text').innerText = "";
     document.getElementById('validation-error-message').style.display = "none";
     document.getElementById('submit-register-btn').disabled = false;
+
+    let passwordEl = document.getElementById('password');
+    let passwordConfirmEl = document.getElementById('password-confirm');
+
+    passwordEl.valid = true;
+    passwordConfirmEl.valid = true;
 }
 
 function validateForm() {
-    let passwordEl = document.getElementById('password');
-    let passwordConfirmEl = document.getElementById('password-confirm');
-    let password = passwordEl.value;
-    let passwordConfirm = passwordConfirmEl.value;
-    
+    let password = document.getElementById('password').value;
+    let passwordConfirm = document.getElementById('password-confirm').value;
+
     if (password === passwordConfirm) {
         if (validate(password)) {
             hideValidationIssues();

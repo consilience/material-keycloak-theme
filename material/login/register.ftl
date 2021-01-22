@@ -86,7 +86,7 @@
 
             <div id="password-input-parent" class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ${properties.kcLabelClass!}">
                 <i class="material-icons mdc-text-field__icon" tabindex="-1" role="button">lock</i>
-                <input required id="password" class="mdc-text-field__input ${properties.kcInputClass!}" name="password" type="password">
+                <input useNativeValidation="false" required id="password" class="mdc-text-field__input ${properties.kcInputClass!}" name="password" type="password">
                 <div class="${properties.kcLabelWrapperClass!}">
                     <label for="password" class="mdc-floating-label ${properties.kcLabelClass!}">${msg("password")?no_esc}</label>
                 </div>
@@ -100,7 +100,7 @@
 
             <div id="password-confirm-input-parent" class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon ${properties.kcLabelClass!}">
                 <i class="material-icons mdc-text-field__icon" tabindex="-1" role="button">lock</i>
-                <input required id="password-confirm" class="mdc-text-field__input ${properties.kcInputClass!}" name="password-confirm" type="password">
+                <input useNativeValidation="false" required id="password-confirm" class="mdc-text-field__input ${properties.kcInputClass!}" name="password-confirm" type="password">
                 <div class="${properties.kcLabelWrapperClass!}">
                     <label for="password-confirm" class="mdc-floating-label ${properties.kcLabelClass!}">${msg("passwordConfirm")?no_esc}</label>
                 </div>
