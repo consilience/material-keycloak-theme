@@ -3,7 +3,7 @@ function validate(input) {
     return regex.test(input);
 }
 
-function showValidationIssues(errorMessage) {
+function showValidationIssue(errorMessage) {
     document.getElementById('validation-error-message-text').innerText = errorMessage;
     document.getElementById('validation-error-message').style.display = "block";
     document.getElementById('submit-register-btn').disabled = true;
