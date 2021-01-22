@@ -44,7 +44,7 @@ const debouncedInputValidator = debounce(validateForm, 500);
 
 document.addEventListener('DOMContentLoaded', function () {
     let passwordInput = document.getElementById('password');
-    let passwordConfirmInput = document.getElementById('password');
+    let passwordConfirmInput = document.getElementById('password-confirm');
     if (!passwordConfirmInput) {
         return;
     }
