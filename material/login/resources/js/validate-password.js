@@ -16,8 +16,10 @@ function hideValidationIssues() {
 }
 
 function validateForm() {
-    let password = document.getElementById('password');
-    let passwordConfirm = document.getElementById('password-confirm');
+    let passwordEl = document.getElementById('password');
+    let passwordConfirmEl = document.getElementById('password-confirm');
+    let password = passwordEl.value;
+    let passwordConfirm = passwordConfirmEl.value;
     
     if (password === passwordConfirm) {
         if (validate(password)) {
