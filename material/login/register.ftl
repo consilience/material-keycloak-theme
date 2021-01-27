@@ -7,15 +7,14 @@
         <br><br>
         <small>Create your user account</small>
     <#elseif section = "form">
-        <span style="color: 6e6e6e;">
+        <span style="color: 6e6e6e !important">
           <p class="mb-1">Your password must follow these rules:</p>
-          <ul style="color: 6e6e6e;">
-            <li style="color: 6e6e6e;">Minimum length of 8 characters</li>
-            <li style="color: 6e6e6e;">Contain at least one uppercase letter</li>
-            <li style="color: 6e6e6e;">Contain at least one number</li>
-            <li style="color: 6e6e6e;">Contain at least one special character</li>
-            <li style="color: 6e6e6e;">It must not be your username</li>
-            <li style="color: 6e6e6e;">You have not used this password recently for Print Trail</li>
+          <ul style="color: 6e6e6e !important">
+            <li style="color: 6e6e6e !important">Minimum length of 8 characters</li>
+            <li style="color: 6e6e6e !important">Contain at least one uppercase letter</li>
+            <li style="color: 6e6e6e !important">Contain at least one number</li>
+            <li style="color: 6e6e6e !important">Contain at least one special character</li>
+            <li style="color: 6e6e6e !important">It must not be your username</li>
           </ul>
         </span>
         <form id="kc-register-form" class="register form ${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
