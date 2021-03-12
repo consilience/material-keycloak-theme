@@ -4,7 +4,7 @@
 	<div class="title">
         <img src="${url.resourcesPath}/img/pt-logo.svg" width="180px" style="margin-bottom: 2rem">
         <br><br>
-        Verify your email
+        Check your email
     </div>
     <#elseif section = "form">
     <div class="alert alert-success">
